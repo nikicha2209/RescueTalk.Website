@@ -1,4 +1,3 @@
-/* index.css */
 header {
     text-align: center;
     padding: 100px 20px;
@@ -43,8 +42,11 @@ header .btn:hover {
 
 .features .grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .features .feature {
@@ -52,14 +54,10 @@ header .btn:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
     width: 30%;
     text-align: center;
     transition: transform 0.3s;
-}
-
-.features .feature:hover {
-    transform: translateY(-10px);
+    margin: 10px 0;
 }
 
 .features .feature i {
@@ -78,92 +76,34 @@ header .btn:hover {
     color: #666;
 }
 
-/* Респонсивни стилове */
+/* За устройства с широчина под 1024px */
 @media (max-width: 1024px) {
+    .features .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .feature {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+/* За мобилни устройства с широчина под 768px */
+@media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
     }
 
-    header p {
-        font-size: 1em;
-    }
-
-    .features .feature {
-        width: 45%;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    header {
-        padding: 50px 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 0.9em;
-    }
-
-    .features .feature {
-        width: 100%;
-        margin: 10px 0;
-    }
-
     .features .grid {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
-    .logo-text {
-        font-size: 1.2em;
-    }
-
-    nav .logo img {
-        height: 40px;
+    .features .feature {
+        width: 90%;  /* Сменяме широчината на 90% */
+        margin-bottom: 20px; /* Разстояние между елементите */
     }
 }
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header p {
-        font-size: 0.8em;
-    }
-
-    .features h2 {
-        font-size: 2em;
-    }
-
-    .features .feature h3 {
-        font-size: 1.2em;
-    }
-
-    .features .feature p {
-        font-size: 0.9em;
-    }
-
-    .logo-text {
-        font-size: 1em;
-    }
-
-    nav .logo img {
-        height: 30px;
-    }
-}   
