@@ -42,9 +42,9 @@ header .btn:hover {
 
 .features .grid {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column; /* Едно под друго */
+    align-items: center; /* Центриране на елементите */
+    gap: 20px; /* Разстояние между елементите */
     padding: 0;
     margin: 0;
 }
@@ -54,7 +54,8 @@ header .btn:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 50%; /* По-малка ширина за по-компактен вид */
+    max-width: 400px; /* Максимална ширина, за да не стават твърде големи */
     text-align: center;
     transition: transform 0.3s;
     margin: 10px 0;
@@ -76,34 +77,14 @@ header .btn:hover {
     color: #666;
 }
 
-/* За устройства с широчина под 1024px */
-@media (max-width: 1024px) {
-    .features .grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .features .feature {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-}
-
-/* За мобилни устройства с широчина под 768px */
+/* Респонсивни стилове за мобилни устройства */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
     }
 
-    .features .grid {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
     .features .feature {
-        width: 90%;  /* Сменяме широчината на 90% */
-        margin-bottom: 20px; /* Разстояние между елементите */
+        width: 80%; /* По-широки на малки екрани */
+        max-width: none; /* Премахваме максималната ширина за малки екрани */
     }
 }

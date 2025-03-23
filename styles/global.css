@@ -41,10 +41,6 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo img {
-    height: 50px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -80,7 +76,7 @@ footer {
 }
 
 /* Респонсивни стилове */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -97,105 +93,5 @@ footer {
 
     .logo-text {
         font-size: 1.2em;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    .features .grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .features .feature {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-    .contact form {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 120px 0;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .features .grid {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .features .feature {
-        width: 90%;
-        margin-bottom: 20px; /* Разстояние между елементите */
-    }
-
-    .about .team {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about .team-image img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-
-    /* Навигация на мобилни екрани */
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Центриране на линковете */
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1.1em;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        font-size: 0.9em;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    .features .feature {
-        width: 100%;
-    }
-
-    .about .team-info {
-        font-size: 1em;
-    }
-
-    .contact input,
-    .contact textarea {
-        font-size: 1em;
-    }
-
-    .contact button {
-        font-size: 1.1em;
     }
 }

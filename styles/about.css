@@ -14,12 +14,12 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .about .team-image img {
     max-width: 700px;
-    width: 100%; 
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -39,7 +39,6 @@
     color: #666;
 }
 
-/* Респонсивни стилове */
 @media (max-width: 768px) {
     .about .team {
         flex-direction: column;
