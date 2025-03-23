@@ -1,0 +1,169 @@
+/* index.css */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #d32f2f;
+    color: white;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    background-color: #ffcc00;
+    color: #d32f2f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover {
+    background-color: #ffb300;
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #d32f2f;
+}
+
+.features .grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.features .feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.features .feature:hover {
+    transform: translateY(-10px);
+}
+
+.features .feature i {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.features .feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.features .feature p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Респонсивни стилове */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .features .feature {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .features .feature {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .features .grid {
+        flex-direction: column;
+    }
+
+    .logo-text {
+        font-size: 1.2em;
+    }
+
+    nav .logo img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .features h2 {
+        font-size: 2em;
+    }
+
+    .features .feature h3 {
+        font-size: 1.2em;
+    }
+
+    .features .feature p {
+        font-size: 0.9em;
+    }
+
+    .logo-text {
+        font-size: 1em;
+    }
+
+    nav .logo img {
+        height: 30px;
+    }
+}   
