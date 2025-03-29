@@ -4,39 +4,23 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-header {
-    background-color: #dc3545;
-    padding: 15px 0;
-    text-align: center;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Това ще помогне да се задържи footer-a в долната част */
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
-    flex-wrap: wrap;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 40px;
-    margin-right: 10px;
+    background-color: #d32f2f; /* Чисто червен фон */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    margin: 0;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 nav ul li {
@@ -45,13 +29,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: white; /* Текста да е бял */
     font-weight: bold;
+    padding: 10px 15px;
+    background-color: #d32f2f; /* Чисто червено за линковете */
 }
 
 nav ul li.active a {
-    border-bottom: 2px solid white;
+    border-bottom: none; /* Премахване на подчертаване */
 }
+
+nav ul li a:hover {
+    background-color: #d32f2f; /* Чисто червено и при hover */
+    transform: none; /* Без ефект на трансформация */
+}
+
 
 .contact, .social-media {
     text-align: center;
@@ -106,7 +98,7 @@ footer {
     padding: 20px;
     background-color: #dc3545;
     color: white;
-    margin-top: 20px;
+    margin-top: auto; /* Това гарантира, че footer-а ще е най-долу */
 }
 
 /* RESPONSIVE DESIGN */
@@ -130,5 +122,15 @@ footer {
     nav ul li a {
         font-size: 1.2em;
         padding: 12px 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        width: 80%;
+        justify-content: center;
     }
 }
