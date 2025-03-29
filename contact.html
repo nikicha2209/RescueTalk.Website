@@ -9,27 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="RescueTalk Logo">
-            <span class="logo-text">RescueTalk</span>
-        </div>
-        <ul>
-            <li><a href="index.html">Начало</a></li>
-            <li><a href="about.html">За нас</a></li>
-            <li><a href="features.html">Функционалности</a></li>
-            <li><a href="contact.html">Контакти</a></li>
-        </ul>
-    </nav>
-    <section class="contact">
-        <h2>Свържи се с нас</h2>
-        <form>
-            <input type="text" name="name" placeholder="Твоето име" required>
-            <input type="email" name="email" placeholder="Твоят email" required>
-            <textarea name="message" placeholder="Твоето съобщение" required></textarea>
-            <button type="submit">Изпрати</button>
-        </form>
-    </section>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="RescueTalk Logo">
+                <span class="logo-text">RescueTalk</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="features.html">Функционалности</a></li>
+                <li class="active"><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Свържи се с нас</h2>
+            <p>Имаш въпрос или искаш да се свържеш с нас? Намери ни в социалните мрежи!</p>
+        </section>
+
+        <section class="social-media">
+            <h2>Последвай ни</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/res.talk" target="_blank">
+                    <img src="images/logo.png" alt="Instagram">Instagram: @res.talk
+                </a>
+                    
+                <a href="https://www.facebook.com/BalkanH0spitaL" target="_blank">
+                    <img src="images/logo.png" alt="Facebook">Facebook: BalkanH0spitaL
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2025 RescueTalk | Спаси човешки живот!</p>
