@@ -11,21 +11,37 @@
 
 .about .team {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+
+.about .team-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .about .team-image img {
-    max-width: 700px;
+    max-width: 500px;  /* намалена ширина */
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* по избор */
 }
 
+
 .about .team-info {
-    max-width: 50%;
-    text-align: left;
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 .about .team-info h2 {
@@ -34,9 +50,21 @@
     color: #d32f2f;
 }
 
+.about .team-info h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .about .team-info p {
     font-size: 1em;
-    color: #666;
+    color: #555;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 768px) {

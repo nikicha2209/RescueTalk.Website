@@ -9,41 +9,6 @@ body {
     min-height: 100vh; /* Това ще помогне да се задържи footer-a в долната част */
 }
 
-nav {
-    display: flex;
-    padding: 0 20px;
-    background-color: #d32f2f; /* Чисто червен фон */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white; /* Текста да е бял */
-    font-weight: bold;
-    padding: 10px 15px;
-    background-color: #d32f2f; /* Чисто червено за линковете */
-}
-
-nav ul li.active a {
-    border-bottom: none; /* Премахване на подчертаване */
-}
-
-nav ul li a:hover {
-    background-color: #d32f2f; /* Чисто червено и при hover */
-    transform: none; /* Без ефект на трансформация */
-}
-
 
 .contact, .social-media {
     text-align: center;
